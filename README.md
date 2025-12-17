@@ -26,6 +26,8 @@ The entire application runs on a dedicated, custom-built Graphical User Interfac
   - Dedicated Windows: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
   - Visual Feedback: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
   - Interactive Components: Uses custom components (RoundButton, ItemLabel) and listeners (DropListener, EquipmentEventListener) for interactive gameplay.
+
+Example of the GameWindow view:
 ![Game Preview](resources/images/GameWindowScreenshot.png)
 
 ## 3. Project Structure
@@ -112,7 +114,41 @@ Game/
                 MyFrame.java
                 UserWindow.java
 ```
-### Documentation
-La documentazione tecnica completa è generata tramite Javadoc. 
-È possibile esplorare la gerarchia delle classi, i metodi e le logiche di sistema qui: 
-**[Esplora la Javadoc del Progetto](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html)**
+## 4. How to run the code
+To run the game on your local machine, you can use an IDE (recommended) or the terminal.
+
+### Prerequisites
+* **Java Development Kit (JDK):** Version 17 or higher is required.
+* **Terminal/Command Prompt:** Accessible from your operating system.
+---
+### Step 1: Create an Output Directory
+First, create a folder to store the compiled bytecode:
+```bash
+mkdir out 
+```
+### Step 2: Compile the Source Code
+__For macOS/Linux__
+```bash
+javac -d out $(find src -name "*.java")
+```
+__For Windows__
+```bash
+javac -d out (Get-ChildItem -Recurse src/*.java)
+```
+### Step 3: Run the application
+_The __-cp__ is mandatory to allow the program to correctly resolve the path to resources/data/users.txt and resources/images/*.png_\
+__For macOS/Linux__
+```bash
+java -cp "out:resources" Main
+```
+__For Windows__
+```bash
+java -cp "out;resources" Main
+```
+## 5. Documentation
+The complete technical documentation is generated via Javadoc
+**[View Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html)**
+
+## 6. Possible improvements
+### 1. Logout
+  - __Logout functionality__: Implement a "Logout" button in the [UserWindow] or [GameWindow]
