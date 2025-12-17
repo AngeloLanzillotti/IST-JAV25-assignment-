@@ -72,7 +72,7 @@ public class EquipmentWindow extends JPanel implements ActionListener {
         setLayout(null);
 
         /* Back Button */
-        ImageIcon icon = new ImageIcon("resources\\images\\backArrow.png");
+        ImageIcon icon = new ImageIcon("resources/images/backArrow.png");
         backButton = new RoundButton(icon);
         backButton.setTextColor(Color.black);
         backButton.setBackgroundColor(Color.gray);
@@ -178,7 +178,7 @@ public class EquipmentWindow extends JPanel implements ActionListener {
 
         ItemLabel label = new ItemLabel(name);
         label.setVisible(true);
-        ImageIcon icon = Images.load("resources\\images\\"+ name + ".png", 125, 180);
+        ImageIcon icon = Images.load("resources/images/"+ name + ".png", 125, 180);
         JLabel iconLabel = new JLabel(icon);
         panel.add(label, BorderLayout.NORTH);
         panel.add(iconLabel, BorderLayout.CENTER);

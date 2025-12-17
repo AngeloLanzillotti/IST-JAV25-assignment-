@@ -68,7 +68,7 @@ public class GameWindow extends JPanel implements ActionListener {
         add(startButton);
 
         /* Equipment button */
-        ImageIcon equipmentArrowImage = new ImageIcon("resources\\images\\frontArrow.png");
+        ImageIcon equipmentArrowImage = new ImageIcon("resources/images/frontArrow.png");
         equipmentButton = new RoundButton(equipmentArrowImage);
         equipmentButton.setBounds(1120, 575, 50, 50);
         equipmentButton.setTextColor(Color.black);
@@ -97,7 +97,7 @@ public class GameWindow extends JPanel implements ActionListener {
         playerLabel.setVerticalAlignment(JLabel.TOP);
         playerLabel.setBounds(20,160,325, 30);
         /* Player's image */
-        ImageIcon playerImage = Images.load("resources\\images\\" + player1.getName() + ".png", 325, 405);
+        ImageIcon playerImage = Images.load("resources/images/" + player1.getName() + ".png", 325, 405);
         JLabel playerIconLabel = new JLabel(playerImage);
         playerIconLabel.setSize(325, 405);
         /* Player's health bar */
@@ -120,7 +120,7 @@ public class GameWindow extends JPanel implements ActionListener {
         enemyLabel.setHorizontalAlignment(JLabel.CENTER);
         enemyLabel.setVerticalAlignment(JLabel.TOP);
         /* Enemy's image */
-        ImageIcon enemyImage = Images.load("resources\\images\\" + player2.getName() + ".png", 325, 405);
+        ImageIcon enemyImage = Images.load("resources/images/" + player2.getName() + ".png", 325, 405);
         JLabel enemyIconLabel = new JLabel(enemyImage);
         enemyIconLabel.setSize(325, 405);
         /* Enemy's health bar */

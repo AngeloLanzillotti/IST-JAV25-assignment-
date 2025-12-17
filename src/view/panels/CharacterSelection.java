@@ -99,7 +99,7 @@ public class CharacterSelection extends JPanel implements ActionListener, Charac
             g.setColor(Color.LIGHT_GRAY);
             g.fillRect(x, zeroY, 215, 300);
             /* Character's image */
-            ImageIcon img = Images.load("resources\\images\\" + chosen.getName() + ".png", 215, 300);
+            ImageIcon img = Images.load("resources/images/" + chosen.getName() + ".png", 215, 300);
             Image image = img.getImage();
             g.drawImage(image, x, zeroY, null);
             /* Character Name */

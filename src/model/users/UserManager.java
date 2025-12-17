@@ -38,7 +38,7 @@ public class UserManager {
 
     /* --- Fields --- */
     /** Path to the file storing all users. */
-    private final String FILE_NAME = "resources\\data\\users.txt";
+    private final String FILE_NAME = "resources/data/users.txt";
     /** List of users loaded in memory from the file. */
     private List<User> users = new ArrayList<>();
     /** Currently logged-in user. */
@@ -147,7 +147,7 @@ public class UserManager {
      * @throws IOException if an I/O error occurs while updating the file or during file rename/delete operations. */
     public void updateUserExperience(User user) throws IOException {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("resources\\data\\users_tmp.txt");
+        File tempFile = new File("resources/data/users_tmp.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile))) {
