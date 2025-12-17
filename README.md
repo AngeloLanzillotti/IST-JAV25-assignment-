@@ -111,4 +111,4 @@ Game/
                 MyFrame.java
                 UserWindow.java
 ```
-Class Reference: A complete description of the codebase, including the Model entities, View components, and Controller logic, is available in the [Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/Game/docs/index.html).
+Class Reference: A complete description of the codebase, including the Model entities, View components, and Controller logic, is available in the [Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html).
