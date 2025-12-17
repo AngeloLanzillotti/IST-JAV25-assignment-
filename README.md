@@ -26,7 +26,7 @@ The entire application runs on a dedicated, custom-built Graphical User Interfac
   - Dedicated Windows: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
   - Visual Feedback: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
   - Interactive Components: Uses custom components (RoundButton, ItemLabel) and listeners (DropListener, EquipmentEventListener) for interactive gameplay.
-![Game Preview](Game/resources/images/GameWindowScreenShot.png)
+![Game Preview](resources/images/GameWindowScreenShot.png)
 
 ## 3. Project Structure
 ```
