@@ -4,7 +4,7 @@
 This project is a standalone Java application implementing a core Turn-Based Role-Playing Game (RPG) combat and character management system.
 The application allows users to create and manage player profiles, select diverse character classes, engage in simulated combat scenarios, manage equipment, and track progress through an experience system.
 
-## 2. Key feature
+## 2. Key features
 __1. Character & Combat System (Model)__
 The game features a rich set of character entities, each defined by core stats and distinct abilities.
   - Diverse Character Classes: Includes playable classes (Warrior, Archer, Wizard) and enemy types (Dragon, Goblin, Orc). All characters inherit from the CharacterModel base class, ensuring consistent behavior across all entities.
@@ -26,6 +26,7 @@ The entire application runs on a dedicated, custom-built Graphical User Interfac
   - Dedicated Windows: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
   - Visual Feedback: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
   - Interactive Components: Uses custom components (RoundButton, ItemLabel) and listeners (DropListener, EquipmentEventListener) for interactive gameplay.
+![Game Preview](Game/resources/images/GameWindowScreenShot.png)
 
 ## 3. Project Structure
 ```
@@ -111,4 +112,7 @@ Game/
                 MyFrame.java
                 UserWindow.java
 ```
-Class Reference: A complete description of the codebase, including the Model entities, View components, and Controller logic, is available in the [Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html).
+### Documentation
+La documentazione tecnica completa è generata tramite Javadoc. 
+È possibile esplorare la gerarchia delle classi, i metodi e le logiche di sistema qui: 
+**[Esplora la Javadoc del Progetto](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html)**
