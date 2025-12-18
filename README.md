@@ -5,27 +5,26 @@ This project is a standalone Java application implementing a core Turn-Based Rol
 The application allows users to create and manage player profiles, select diverse character classes, engage in simulated combat scenarios, manage equipment, and track progress through an experience system.
 
 ## 2. Key features
-__1. Character & Combat System (Model)__
+__1. Character & Combat System__
 The game features a rich set of character entities, each defined by core stats and distinct abilities.
-  - Diverse Character Classes: Includes playable classes (Warrior, Archer, Wizard) and enemy types (Dragon, Goblin, Orc). All characters inherit from the CharacterModel base class, ensuring consistent behavior across all entities.
-  -  Stats and Progression: Characters are defined by Stats and progress using an ExperienceProgressBar tied to an internal experience system.
-  -   Combat Logic: The GameController manages the turn-based combat flow, determining actions, damage calculations, and win/loss conditions.
+  - __Diverse Character Classes__: Includes playable classes (Warrior, Archer, Wizard) and enemy types (Dragon, Goblin, Orc). All characters inherit from the CharacterModel base class, ensuring consistent behavior across all entities.
+  - __Combat Logic__: The GameController manages the turn-based combat flow, determining actions, damage calculations, and win/loss conditions.
 
-__2. Equipment and Items System (Model)__
+__2. Equipment and Items System__
 A complete system for handling inventory and character equipment, supporting both consumption and permanent enhancements.
-  -	Equippable Items: Defined by the Equipable class, items like Sword, Crossbow, Armor, and Shield modify character stats. The system is managed via the EquipmentController.
-  -	Consumables: Includes various Potion types (HealthPotion, PowerfulPotion, SpeedPotion) that can be used during gameplay.
+  -	__Equippable Items__: Defined by the Equipable class, items like Sword, Crossbow, Armor, and Shield modify character stats. The system is managed via the EquipmentController.
+  -	__Consumables__: Includes various Potion types (HealthPotion, PowerfulPotion, SpeedPotion) that can be used during gameplay.
 
-__3. User Management & Persistence (Model/Users)__
+__3. User Management & Persistence__
 The application includes a system to manage user accounts and application state across sessions.
-  - User Profiles: Users are handled by the User class and managed via the Singleton UserManager.
-  - Session Management: The UserManager handles login, user creation, experience updates, and data persistence by writing user data to a dedicated file (users.txt), ensuring user progress is saved.
+  - __User Profiles__: Users are handled by the User class and managed via the Singleton UserManager.
+  - __Session Management__: The UserManager handles login, user creation, experience updates, and data persistence by writing user data to a dedicated file (users.txt), ensuring user progress is saved.
 
-__4. Graphical User Interface (GUI - View)__
+__4. Graphical User Interface__
 The entire application runs on a dedicated, custom-built Graphical User Interface (GUI), providing an intuitive experience.
-  - Dedicated Windows: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
-  - Visual Feedback: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
-  - Interactive Components: Uses custom components (RoundButton, ItemLabel) and listeners (DropListener, EquipmentEventListener) for interactive gameplay.
+  - __Dedicated Windows__: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
+  - __Visual Feedback__: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
+  - __Interactive Components__: Uses custom components (RoundButton, ItemLabel) and listeners (DropListener, EquipmentEventListener) for interactive gameplay.
 
 Example of the GameWindow view:
 ![Game Preview](resources/images/GameWindowScreenshot.png)
@@ -151,12 +150,12 @@ The complete technical documentation is generated via Javadoc\
 
 ## 6. Possible improvements
 ### 1. Logout
-  - __Logout functionality__: Implement a "Logout" button in the [UserWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/GameWindow.java) or [GameWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/UserWindow.java) to allow users to switch profiles.
+  - __Logout functionality__: Implement a "Logout" button in the [UserWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/UserWindow.java) or [GameWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/GameWindow.java) to allow users to switch profiles.
 ### 2. Expanded Roster
-  - __New Playable Classes__: Add new classes inheriting from [PlayerCharacter]().
-  - __New Enemy Types__: Add new types of characters inheriting from [Enemy]().
+  - __New Playable Classes__: Add new classes inheriting from [PlayerCharacter](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/model/entity/base/PlayerCharacter.java).
+  - __New Enemy Types__: Add new types of characters inheriting from [Enemy](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/model/entity/base/Enemy.java).
 ### 3. Advanced Combat System
-  - __Move Selection__: Replace the automatic attack with a __Skill Menu__ in [GameWindow](). Players can manually choose between different types of attack.
+  - __Move Selection__: Replace the automatic attack with a __Skill Menu__ in [GameWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/GameWindow.java). Players can manually choose between different types of attack.
   - __Class-Specific Special Moves__: Implement moves typical for each character (e.g., _Wizard_: Fireball)
 ### 4. Level-Based Skills and Characters
   - __Ability Unlocking__: Discover new ability while the users goes up with the level.
