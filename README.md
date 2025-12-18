@@ -134,7 +134,7 @@ To run the game on your local machine, you can use an IDE (recommended) or the t
 ## First option: using an IDE
 ### Step 1: Clone the repository
 ```bash
-git clone [https://github.com/angelolanzillotti/IST-JAV25-assignment-.git](https://github.com/angelolanzillotti/IST-JAV25-assignment-.git)
+git clone https://github.com/angelolanzillotti/IST-JAV25-assignment-.git
 ```
 ### Step 2: Open the project
 Import the IST-JAV25-assignment- folder into your IDE (e.g., IntelliJ IDEA, VS Code)
