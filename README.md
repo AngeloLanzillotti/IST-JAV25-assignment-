@@ -146,9 +146,18 @@ __For Windows__
 java -cp "out;resources" Main
 ```
 ## 5. Documentation
-The complete technical documentation is generated via Javadoc
+The complete technical documentation is generated via Javadoc\
 **[View Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html)**
 
 ## 6. Possible improvements
 ### 1. Logout
-  - __Logout functionality__: Implement a "Logout" button in the [UserWindow] or [GameWindow]
+  - __Logout functionality__: Implement a "Logout" button in the [UserWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/GameWindow.java) or [GameWindow](https://angelolanzillotti.github.io/IST-JAV25-assignment-/src/view/windows/UserWindow.java) to allow users to switch profiles.
+### 2. Expanded Roster
+  - __New Playable Classes__: Add new classes inheriting from [PlayerCharacter]().
+  - __New Enemy Types__: Add new types of characters inheriting from [Enemy]().
+### 3. Advanced Combat System
+  - __Move Selection__: Replace the automatic attack with a __Skill Menu__ in [GameWindow](). Players can manually choose between different types of attack.
+  - __Class-Specific Special Moves__: Implement moves typical for each character (e.g., _Wizard_: Fireball)
+### 4. Level-Based Skills and Characters
+  - __Ability Unlocking__: Discover new ability while the users goes up with the level.
+  - __Characters Unlocking__: Accordingly with user's level, he can unlocked different characters and different levels of that type of character.
