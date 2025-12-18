@@ -154,6 +154,7 @@ First, create a folder to store the compiled bytecode:
 ```bash
 mkdir out 
 ```
+This folder helps to separate the human-readable source code from the machine-executable bytecode. This helps to have a clean project, without mixing things. Moreover, by isolating compiled files, the Java Virtual Machine (JVM) can efficiently load the necessary classes from a single location without interfering with the original source files.
 ### Step 3: Compile the Source Code
 ```bash
 javac -d out -sourcepath src src/Main.java
