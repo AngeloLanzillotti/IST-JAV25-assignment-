@@ -120,21 +120,34 @@ To run the game on your local machine, you can use an IDE (recommended) or the t
 * **Java Development Kit (JDK):** Version 17 or higher is required.
 * **Terminal/Command Prompt:** Accessible from your operating system.
 ---
-### Step 1: Create an Output Directory
+## First option: using an IDE
+### Step 1: Clone the repository
+```bash
+git clone [https://github.com/angelolanzillotti/IST-JAV25-assignment-.git](https://github.com/angelolanzillotti/IST-JAV25-assignment-.git)
+```
+### Step 2: Open the project
+Import the IST-JAV25-assignment- folder into your IDE (e.g., IntelliJ IDEA, VS Code)
+### Step 3: Configure resources folder
+In IntelliJ, right-click the resources folder and select __Mark Directory as > Resources Root__. This is crucial for the application to locate __resources/data/users.txt__ and all graphical assets.
+### Step 4: Compile and Run
+Locate the __src/Main.java__, right-click the file and select __Run 'Main.main()'__.
+
+---
+## Second option: compile and run just using the terminal
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/angelolanzillotti/IST-JAV25-assignment-.git
+```
+### Step 2: Create an Output Directory
 First, create a folder to store the compiled bytecode:
 ```bash
 mkdir out 
 ```
-### Step 2: Compile the Source Code
-__For macOS/Linux__
+### Step 3: Compile the Source Code
 ```bash
-javac -d out $(find src -name "*.java")
+javac -d out -sourcepath src src/Main.java
 ```
-__For Windows__
-```bash
-javac -d out (Get-ChildItem -Recurse src/*.java)
-```
-### Step 3: Run the application
+### Step 4: Run the application
 _The __-cp__ is mandatory to allow the program to correctly resolve the path to resources/data/users.txt and resources/images/*.png_\
 __For macOS/Linux__
 ```bash
