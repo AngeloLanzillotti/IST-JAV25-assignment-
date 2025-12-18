@@ -35,20 +35,24 @@ Game/
 └── resources/
 |   └── data/
 |   |   └── users.txt
+|   |
 |   └── images/
 |       └── *.png
 |
 └── src/
     └── Main.java
+    |
     └── controller/
     |   └── eventListeners/
     |   |   └── CharacterEventListener.java
     |   |       DropListener.java
     |   |       EquipmentEventListener.java
+    |   |
     |   └── gameFlow/
     |   |   └── CharacterSelectionController.java
     |   |       GameController.java
     |   |       IntroductionController.java
+    |   |
     |   └── system/
     |       └── EquipmentController.java
     |           MessageController.java
@@ -64,6 +68,7 @@ Game/
     |  |   |   └── CharacterModel.java
     |  |   |       Enemy.java
     |  |   |       PlayerCharacter.java
+    |  |   |
     |  |   └── concrete/
     |  |       └── Archer.java
     |  |           Dragon.java
@@ -71,11 +76,13 @@ Game/
     |  |           Orc.java
     |  |           Warrior.java
     |  |           Wizard.java
+    |  |
     |  └── items/
     |  |   └── base/
     |  |   |   └── Equipable.java
     |  |   |       Item.java
     |  |   |       Potion.java
+    |  |   |
     |  |   └── concrete/
     |  |       └── Armor.java
     |  |           Crossbow.java
@@ -84,6 +91,7 @@ Game/
     |  |           Shield.java
     |  |           SpeedPotion.java
     |  |           Sword.java
+    |  |
     |  └── users/
     |      └── Session.java
     |          User.java
@@ -96,16 +104,19 @@ Game/
     └── view/
         └── assets/
         |   └── Images.java
+        |
         └── components/
         |   └── ExperienceProgressBar.java
         |       HealthProgressBar.java
         |       ItemLabel.java
         |       RoundButton.java
+        |
         └── panels/
         |   └── CharacterSelection.java
         |       CharacterSelectionInterface.java
         |       EnemySelection.java
         |       EquipmentPanel.java
+        |
         └── windows/
             └── EquipmentWindow.java
                 GameWindow.java
@@ -158,7 +169,7 @@ __For Windows__
 java -cp "out;resources" Main
 ```
 ## 5. Documentation
-The complete technical documentation is generated via Javadoc\
+The complete technical documentation is generated via Javadoc.\
 **[View Javadoc Documentation](https://angelolanzillotti.github.io/IST-JAV25-assignment-/docs/index.html)**
 
 ## 6. Possible improvements
