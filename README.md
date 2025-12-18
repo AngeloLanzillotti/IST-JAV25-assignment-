@@ -5,22 +5,22 @@ This project is a standalone Java application implementing a core Turn-Based Rol
 The application allows users to create and manage player profiles, select diverse character classes, engage in simulated combat scenarios, manage equipment, and track progress through an experience system.
 
 ## 2. Key features
-__1. Character & Combat System__
+__1. Character & Combat System__\
 The game features a rich set of character entities, each defined by core stats and distinct abilities.
-  - __Diverse Character Classes__: Includes playable classes (Warrior, Archer, Wizard) and enemy types (Dragon, Goblin, Orc). All characters inherit from the CharacterModel base class, ensuring consistent behavior across all entities.
+  - __Different Character Classes__: Includes playable classes (Warrior, Archer, Wizard) and enemy types (Dragon, Goblin, Orc). All characters inherit from the CharacterModel base class, ensuring consistent behavior across all entities.
   - __Combat Logic__: The GameController manages the turn-based combat flow, determining actions, damage calculations, and win/loss conditions.
 
-__2. Equipment and Items System__
+__2. Equipment and Items System__\
 A complete system for handling inventory and character equipment, supporting both consumption and permanent enhancements.
   -	__Equippable Items__: Defined by the Equipable class, items like Sword, Crossbow, Armor, and Shield modify character stats. The system is managed via the EquipmentController.
   -	__Consumables__: Includes various Potion types (HealthPotion, PowerfulPotion, SpeedPotion) that can be used during gameplay.
 
-__3. User Management & Persistence__
+__3. User Management & Persistence__\
 The application includes a system to manage user accounts and application state across sessions.
   - __User Profiles__: Users are handled by the User class and managed via the Singleton UserManager.
   - __Session Management__: The UserManager handles login, user creation, experience updates, and data persistence by writing user data to a dedicated file (users.txt), ensuring user progress is saved.
 
-__4. Graphical User Interface__
+__4. Graphical User Interface__\
 The entire application runs on a dedicated, custom-built Graphical User Interface (GUI), providing an intuitive experience.
   - __Dedicated Windows__: The game flow is driven by dedicated windows, including the IntroductionWindow, CharacterSelection, GameWindow, and EquipmentWindow.
   - __Visual Feedback__: Components like HealthProgressBar and ExperienceProgressBar provide real-time visual feedback on character status.
