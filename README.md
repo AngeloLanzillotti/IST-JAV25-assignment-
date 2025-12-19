@@ -158,6 +158,8 @@ This folder helps to separate the human-readable source code from the machine-ex
 ### Step 3: Compile the Source Code
 ```bash
 cd IST-JAV25-assignment-
+```
+```bash
 javac -d out -sourcepath src src/Main.java
 ```
 ### Step 4: Run the application
